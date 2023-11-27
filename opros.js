@@ -1,17 +1,11 @@
-// Создаем функцию-плагин
-function interceptRequests() {
-  // Сохраняем оригинальную функцию fetch
-  const originalFetch = window.fetch;
-
-  // Переопределяем функцию fetch
-  window.fetch = function (url, options) {
-    // Выводим URL запроса в консоль
-    console.log('Запрос URL:', url);
-    
-    // Вызываем оригинальную функцию fetch с переданными параметрами
-    return originalFetch.apply(this, arguments);
-  };
+{
+	"satus": 200,
+	"data": {
+		"kp_rating": "0",
+		"imdb_rating": "6",
+		"kp_id": 4740371,
+		"auth": true,
+		"vip": true,
+		"leftDays": "💎20 дней"
+	}
 }
-
-// Запускаем плагин
-interceptRequests();
